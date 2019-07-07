@@ -1,0 +1,226 @@
+﻿
+@{
+    ViewBag.Title = "Add New Book";
+}
+
+<!-- Start: Page Banner -->
+<section class="page-banner services-banner">
+    <div class="container">
+        <div class="banner-header">
+            <h2>Add New Book</h2>
+            <span class="underline center"></span>
+            <p class="lead"></p>
+        </div>
+    </div>
+</section>
+<!-- End: Page Banner -->
+
+<!-- Start: Contact Us Section -->
+<div id="content" class="site-content">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+            <div class="contact-main">
+                <div class="contact-us">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-area">
+                                <div class="container">
+                                    @*<div class="col-md-5 col-md-offset-1 border-gray-left">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="contact-map bg-light margin-left">
+                                                        <div class="company-map" id="map"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>*@
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="contact-form bg-light margin-right">
+                                                    <h2>Add New Book</h2>
+                                                    <span class="underline left"></span>
+                                                    <div class="contact-fields">
+                                                        <form id="add-new-book" name="add-new-book" action="" method="post">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Book Title" name="Title" id="first-name" size="30" value="" aria-required="true" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Author" name="Author" id="author" size="30" value="" aria-required="true" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="datetime" placeholder="Date Published" name="DatePublished" id="date-dublished" size="30" value="" aria-required="true" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Number of Pages" name="NumberOfPages" id="number-of-pages" size="30" value="" aria-required="true" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Genre" name="Genre" id="Genre" size="30" value="" aria-required="true" />
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="ISBN" name="ISBN" id="ISBN" size="30" value="" aria-required="true" />
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Edition" name="Edition" id="Edition" size="30" value="" aria-required="true" />
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Language" name="Language" id="Language" size="30" value="" aria-required="true" />
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Publisher" name="Publisher" id="Publisher" size="30" value="" aria-required="true" />
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Image" name="Image" id="Image" size="30" value="" aria-required="true" />
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Availability" name="Availability" id="Availability" size="30" value="" aria-required="true" />
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input class="form-control" type="text" placeholder="Summary" name="Summary" id="Summary" size="30" value="" aria-required="true" />
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group form-submit">
+                                                                        <input class="btn btn-default" id="submit-add-book-form" type="button" name="submit" value="Submit" />
+                                                                    </div>
+                                                                </div>
+                                                                <div id="success">
+                                                                    <span>Your message was sent successfully! Our team will contact you soon.</span>
+                                                                </div>
+
+                                                                <div id="error">
+                                                                    <span>Something went wrong, try refreshing and submitting the form again.</span>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!-- End: Contact Us Section -->
+<!-- Start: Social Network -->
+<section class="social-network section-padding">
+    <div class="container">
+        <div class="center-content">
+            <h2 class="section-title">Follow Us</h2>
+            <span class="underline center"></span>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <ul>
+            <li>
+                <a class="facebook" href="#" target="_blank">
+                    <span>
+                        <i class="fa fa-facebook-f"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="twitter" href="#" target="_blank">
+                    <span>
+                        <i class="fa fa-twitter"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="google" href="#" target="_blank">
+                    <span>
+                        <i class="fa fa-google-plus"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="rss" href="#" target="_blank">
+                    <span>
+                        <i class="fa fa-rss"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="linkedin" href="#" target="_blank">
+                    <span>
+                        <i class="fa fa-linkedin"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="youtube" href="#" target="_blank">
+                    <span>
+                        <i class="fa fa-youtube"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- End: Social Network -->
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            var token = sessionStorage.getItem('tokenKey');
+            var headers = {};
+            if (token) {
+                headers.Authorization = 'Bearer ' + token;
+            }
+
+            $('#submit-add-book-form').on('click', function () {
+                var formData = $('#add-new-book').serializeArray();
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:64110/api/books",
+                    headers: headers,
+                    data: formData,
+                    success: function () {
+                        alert("The book was submitted.");
+                    },
+                    error: function (xhr) {
+                        alert("Something went wrong. " + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+}
